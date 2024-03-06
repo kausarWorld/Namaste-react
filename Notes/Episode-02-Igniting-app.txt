@@ -1,0 +1,61 @@
+Igniting our application
+----------------------------------------------------------------
+>> First lets push our code to github
+>> let us configure git into our project by giving  "git init" now it has become git init
+>> my main branch is master now lets make it is main .beacuse it github main branch is "MAIN" so will give command as "git branch -m main".
+>> lets push all these code to github.
+>> create readme file.
+>> push it to github.
+   step 1: git add. it will add all files.
+   step2 : git commit -m "episode 01" ( m means message)
+>> local dont know remote this step has to be done once we have to setup our project to remote.
+   step 3 : git remote add origin git@github.com/
+   step 4 : git push origin main(push code to origin main)
+
+-------------------------------
+LETS START IGNITING OUR APP
+------------------------------------------------
+>> Is this code ready to push production Ans:No beacuse this is not optimized code.
+>> I have to bundled those files minified the files, optimize the images.for this we have to
+        1. we have to do lot processing in local.before pushing to production.
+        2. we need to do bundling, code spliting, chunking , image optimization we have tp remove comments we have to minify the code .compress the code.
+
+>> Will learn how to scale and production ready app.
+>> when we use create-react-app it will create sceffolds for us which is already produnction ready.
+>> can react itslef is enoug for production ready answer is No.
+>> we have to use lot of library (packges) to make our app production ready app.
+
+NPM
+--------
+NPM is everything but not node package manager.
+ >> NPM  manages packages
+ >> lets just add node package manager to our application .
+ "npm init"
+ >> if we do npm init it will create package.json it is a configuration of npm.
+ 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

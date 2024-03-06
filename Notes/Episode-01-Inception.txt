@@ -1,0 +1,187 @@
+Inception
+----------------------------------------------------------------
+>> Lets create basic HTML page index.html. VS code uses Emmet it generates some code for us.
+        > if we give html:5 it it will give basic html skeleton.Lets create basic page which has headings 
+        > using plain html it showing "Hello World" in browser.
+
+>> Lets create same hello world page but we are not using but now we will use javascript .
+        > using script tag we write javascript code 
+        > how to write javascript to create h1 tag?
+        example : 
+            <div id="root"></div>
+            <script>
+                const heading = document.createElement('h1');
+                heading.innerHTML = "hellow world  from javascript";
+                const root = document.getElementById('root');
+                root.appendChild(heading)  
+            </script> 
+
+>> Lets create hello world using React
+        > Does browser knows React ? Answer :NO
+        > Lets get react into our project is using CDN 
+        > What is CDN and crossorgin?content delivery network its where react is hosted we are fetching from server 
+            There are 2 CDN links for react after inlcuding this CDN my project has super power its first thing to use react in our project.
+        > Lets see whats there in CDN there will some random code its all jaavscript code.
+            When you write react in console it will show all react functions.
+            😄 SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED 😄 :
+        > Why there are 2 files in react CDN ?
+                * First one is core of react (React.development.js).
+                * Second one is usedfull for DOM manipulation (react-dom.development.js).
+                They made 2 files because it works on different platform. like in mobile browser.
+                    Example :In console write (React and React DOM).
+        creating a element is core of react
+        creating a root and rendering something is job react DOM
+        > most costly operation in web browser is DOM manipuation 
+        > react gives helper functions to optimize the DOM manipulation
+        > second parameter in object create element is for giving attribute ex: (id, class) 
+        > we can add style in second parameter      
+        example
+         index.css
+         --------------
+        # heading {
+            color:red
+        }
+        App.js 
+        -----------------
+        const heading = React.createElement({
+            "h1", 
+            {id:"heading", xyz:"abc"},
+            "hello world from react"
+        })
+        console.log(heading)
+        const root = React.createRoot(document.getElementById("root"))
+        root.render(heading)
+
+        > what heading console will give it will not give html tag it will give object that is react element.
+        ex :console.log(heading)
+        it has props  (text is children and  attributes are inside react )
+        > we should know EOD react.createElement is object
+        > job of root.render is to convert heading object to h1 tag and render in DOM.
+
+        > html structure is not one or 2 tab but its complex structure its nested structure
+            ex: 
+            <div id="parent">
+                <div id="child">
+                    <h1></h1>
+                </div>
+            </div>
+        > creating nested element is by adding react element to third attribute.
+        example
+        --------------------------------
+        const parent = React.createElement(
+            "div",
+            {id:"parent"},
+            React.createElement(
+                "div",
+                {id:"child"},
+                [
+                    React.createElement("h1",{}, "I am in h1 tag"),
+                    React.createElement("h1",{}, "I am in h1 tag")
+                ]
+
+            )
+        )
+    
+        > If we have to pass nested multiple children then we have to pass in array.
+        > To overcome fro this will use will JSX 
+        > if we change the order of files like app.js first then CDN it will throw an error on our face 😄
+        > there are 2 tyoes of CDN development and production
+        > if already some html tag and we are render using react what will happens it will overriden (it will get reaplced)
+            example :
+            <div id="root">
+                Kausar is here
+            </div>
+            it will reaplced with whatever I pass inside render() method.
+        > when browser reads html files first will render html tag then it will see react it replace by whatever is there insdie render() method.
+        > curious what if I had above and below root div will it get replaced . Answer is No it wont repalce whatever is there 
+        > React can be applied to portioin of our application example only for header or footer 
+        > Its not full fledge framework so it can pplied to portion of application 
+        > React is giving us helper fucntion from which we cnaa develop our application faster.
+        > React can work inside small div also so its beautifull.
+        > yes we can create large scale application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
